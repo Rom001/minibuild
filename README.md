@@ -25,3 +25,11 @@
 - [ ] Refuser la republication d'une même coordonnée
 - [ ] Résoudre les dépendances transitives
 - [ ] Orchestrer le parsing et la résolution avec BuildTool
+
+## Question 5
+
+Avec la technique Fake it, `Gav.parse` renvoie une valeur constante.
+
+L'information `"org.acme"` apparaît à la fois dans le test et dans le code de production.
+
+Cela montre que le comportement n'est pas encore réellement implémenté : le test est trop peu contraignant et permet de faire passer un code qui renvoie toujours la même valeur.
